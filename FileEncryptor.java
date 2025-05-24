@@ -6,7 +6,7 @@ public class FileEncryptor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("=== 🔐 File Encryptor Tool ===");
+        System.out.println("=== File Encryptor Tool ===");
         System.out.print("Enter file path: ");
         String inputFile = scanner.nextLine();
 
@@ -23,9 +23,9 @@ public class FileEncryptor {
             String content = readFile(inputFile);
             String result = (mode.equals("E")) ? encrypt(content, key) : decrypt(content, key);
             writeFile(outputFile, result);
-            System.out.println("✅ File processed. Output saved to: " + outputFile);
+            System.out.println("File processed. Output saved to: " + outputFile);
         } catch (IOException e) {
-            System.out.println("❌ Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
     }
 
