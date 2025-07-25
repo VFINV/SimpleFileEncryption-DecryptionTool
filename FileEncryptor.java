@@ -11,11 +11,11 @@ public class FileEncryptor {
         String inputFile = scanner.nextLine();
 
         System.out.print("Enter encryption key (number): ");
-        int key = scanner.nextInt();
+        int key = scanner.nextInt(); //
         scanner.nextLine(); // Consume newline
 
-        System.out.print("Do you want to Encrypt (E) or Decrypt (D)? ");
-        String mode = scanner.nextLine().trim().toUpperCase();
+        System.out.print("Do you want to Encrypt (E) or Decrypt (D)? "); //
+        String mode = scanner.nextLine().trim().toUpperCase(); //getting the string value
 
         String outputFile = mode.equals("E") ? "encrypted.txt" : "decrypted.txt";
 
