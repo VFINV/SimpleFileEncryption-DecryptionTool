@@ -6,7 +6,7 @@ public class FileEncryptor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("=== File Encryptor Tool ===");
+        System.out.println("File Encryptor Tool");
         System.out.print("Enter file path: ");
         String inputFile = scanner.nextLine();
 
@@ -42,7 +42,7 @@ public class FileEncryptor {
     }
 
     public static String readFile(String path) throws IOException {
-        return new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get(path)));
+        return new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get(path))); //
     }
 
     public static void writeFile(String path, String content) throws IOException {
